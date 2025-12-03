@@ -1,6 +1,6 @@
 total_joltage = 0
 
-with open('day_3/input.txt', 'r') as file:
+with open('day_3/test_input.txt', 'r') as file:
     for bank in file:
         bank = bank.strip()
         
@@ -18,6 +18,5 @@ with open('day_3/input.txt', 'r') as file:
         
         bank_joltage = int(str(first_battery_joltage) + str(second_battery_joltage))
         total_joltage += bank_joltage
-        
 
 print(f'Total joltage: {total_joltage}')
